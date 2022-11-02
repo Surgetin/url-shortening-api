@@ -8,6 +8,9 @@
     --grayish: hsl(257, 7%, 63%);
     --dark-blue: hsl(255, 11%, 22%);
     --dark-violet: hsl(260, 8%, 14%);
+
+    --max_width: 1440px;
+    --transition-3ms: .3s;
 }
 
 html {
@@ -85,35 +88,60 @@ body {
   overflow-x: hidden;
 }
 
+
 /* Navigation */
 .nav_container {
     width: 100%;
     position: fixed;
-    background-color: rgb(255, 255, 255);
+    padding: 2rem 3rem;
+    overflow: hidden;
+    transition: var(--transition-3ms);
+    background-color: transparent;
+    z-index: 999;
 }
 
-.nav_list-container {
+@media screen and (max-width: 700px) {
+    .nav_container {
+        padding: 1.5rem 1rem;
+    }    
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max_width);
+    margin-inline: auto;
+}
+
+.navigation {
+    width: 100%;
+}
+
+.nav_lists,
+.nav_list-container,
+.nav_list-container-login {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    margin: 0 auto;
-    padding: 1.5rem 0;
-}
-
-.logo_container {
-    margin-right: .8rem;
 }
 
 .nav_lists {
-    display: flex;
-    max-width: 1440px;
-    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.logo_container {
+    margin-right: 1.5rem;
+}
+
+.nav_list-container,
+.nav_list-container-login {
+    gap: 1.5rem;
 }
 
 .nav_link {
     color: var(--grayish);
     font-weight: 500;
-    font-size: .9rem;
 }
 
 .primary-btn {
@@ -121,6 +149,110 @@ body {
     background-color: var(--primary-cyan);
     padding: .5rem 1.4rem;
     border-radius: 40px;
-    font-size: .9rem;
     font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    color: white;
+    background-color: var(--primary-cyan);
+    padding: .8rem 2.5rem;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.submit_btn {
+    width: 25%;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+}
+
+.menu__btn {
+    display: flex;
+    flex-direction: column;
+    margin: 3px auto;
+    width: 25px;
+    height: 3px;
+    background-color: var(--dark-violet);
+    border-radius: 5px;
+    transition: .4s ease;
+}
+
+/* Hero content */
+.main {
+    padding: 0 3rem;
+}
+
+.hero_container {
+    max-width: var(--max_width);
+    padding-top: 10rem;
+    margin-inline: auto;
+    position: relative;
+}
+
+.hero_section-left {
+    max-width: 40rem;
+}
+
+.hero_image {
+    position: absolute;
+    top: 120px;
+    right: -200px;
+}
+
+.hero_heading {
+    font-size: 5rem;
+    color: var(--primary-dark);
+    line-height: 90px;
+}
+
+.hero_content {
+    font-size: 1.3rem;
+    width: 80%;
+    color: var(--grayish);
+    margin-top: .6rem;
+    margin-bottom: 1.8rem;
+}
+
+/* Input field*/
+.input_container {
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    gap: 2rem;
+    max-width: var(--max_width);
+    margin-top: 12rem;
+    width: 100%;
+    padding: 3.5rem 4.5rem;
+    border-radius: 15px;
+    background-color: var(--primary-dark);
+    background-image: url("../images/bg-shorten-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.input_container input {
+    padding: 1.6rem 2.2rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.input_container input::placeholder {
+    font-size: 1.4rem;
+    color: var(--grayish);
+    font-weight: 600;
 }

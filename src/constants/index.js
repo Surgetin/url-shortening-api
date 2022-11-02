@@ -24,3 +24,19 @@ export const navLinks2 = [
     title: "Sign Up",
   },
 ];
+
+export const heroContent = [
+  {
+    id: "header",
+    title: "More than just shorter links",
+  },
+  {
+    id: "content",
+    title: `Build your brand’s recognition and get detailed insights 
+      on how your links are performing.`,
+  },
+  {
+    id: "btn",
+    title: "Get Started",
+  },
+];

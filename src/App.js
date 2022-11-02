@@ -1,11 +1,19 @@
 import React from "react";
 import Navigation from "./components/Navigation";
+import HeroSection from "./components/HeroSection";
+import InputSection from "./components/InputSection";
 
 function App() {
   return (
-    <div className="container">
-      <Navigation />
-    </div>
+    <>
+      <header className="header">
+        <Navigation />
+      </header>
+      <main className="main">
+        <HeroSection />
+        <InputSection />
+      </main>
+    </>
   );
 }
 
