@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+:root {
+    --primary-cyan: hsl(180, 66%, 49%);
+    --primary-dark: hsl(257, 27%, 26%);
+    --secondary-locor: hsl(0, 87%, 67%);
+    --gray: hsl(0, 0%, 75%);
+    --grayish: hsl(257, 7%, 63%);
+    --dark-blue: hsl(255, 11%, 22%);
+    --dark-violet: hsl(260, 8%, 14%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Resets */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(235, 235, 235);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-dark);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(258, 43%, 51%);
+  border-radius: 50px;
+}
+
+#root {
+  width: 100%;
+}
+
+/* Body */
+body {
+  font-family: "Poppins", sans-serif;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+}
+
+/* Navigation */
+.nav_container {
+    width: 100%;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav_list-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+
+.logo_container {
+    margin-right: .8rem;
+}
+
+.nav_lists {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav_link {
+    color: var(--grayish);
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+.primary-btn {
+    color: white;
+    background-color: var(--primary-cyan);
+    padding: .5rem 1.4rem;
+    border-radius: 40px;
+    font-size: .9rem;
+    font-weight: 500;
+}
