@@ -1,42 +1,65 @@
 export const navLinks = [
   {
-    id: "features",
-    title: "Features",
+    title: "features",
+    content: "Features",
   },
   {
-    id: "pricing",
-    title: "Pricing",
+    title: "pricing",
+    content: "Pricing",
   },
   {
-    id: "resources",
-    title: "Resources",
+    title: "resources",
+    content: "Resources",
   },
 ];
 
 export const navLinks2 = [
   {
-    id: "login",
-    title: "Login",
+    title: "login",
+    content: "Login",
   },
   {
-    id: "sign_up",
+    title: "sign_up",
     className: "primary-btn",
-    title: "Sign Up",
+    content: "Sign Up",
   },
 ];
 
 export const heroContent = [
   {
-    id: "header",
-    title: "More than just shorter links",
+    title: "header",
+    content: "More than just shorter links",
   },
   {
-    id: "content",
-    title: `Build your brand’s recognition and get detailed insights 
+    title: "content",
+    content: `Build your brand’s recognition and get detailed insights 
       on how your links are performing.`,
   },
   {
-    id: "btn",
-    title: "Get Started",
+    title: "btn",
+    content: "Get Started",
+  },
+];
+
+export const InputSection = [
+  {
+    title: "placeholder",
+    content: "Shorten a link here...",
+  },
+  {
+    title: "submit_btn",
+    content: "Shorten It!",
+  },
+];
+
+export const Testimonials = [
+  {
+    title: "heading",
+    content: "Advanced Statistics",
+  },
+  {
+    title: "content",
+    content: `Track how your links are performing across the web with our 
+    advanced statistics dashboard.`,
   },
 ];

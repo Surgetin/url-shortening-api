@@ -17,15 +17,15 @@ const navigation = () => {
                                 </a>    
                             </div>
                             {navLinks.map((nav) => (
-                                <li key={nav.id} className="nav_list-item">
-                                    <a className="nav_link" href={`#${nav.id}`}>{nav.title}</a>
+                                <li key={nav.title} className="nav_list-item">
+                                    <a className="nav_link" href={`#${nav.title}`}>{nav.content}</a>
                                 </li>
                             ))}
                         </div>
                         <div className="nav_list-container-login">
                             {navLinks2.map((nav) => (
-                                <li key={nav.id} className="nav_list-item">
-                                    <a className={nav.className ? nav.className : "nav_link"} href={`#${nav.id}`}>{nav.title}</a>
+                                <li key={nav.title} className="nav_list-item">
+                                    <a className={nav.className ? nav.className : "nav_link"} href={`#${nav.title}`}>{nav.content}</a>
                                 </li>
                             ))}
                         </div>

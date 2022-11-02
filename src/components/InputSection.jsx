@@ -1,11 +1,12 @@
 import React from "react";
+import { InputSection } from '../constants';
 
 const inputSection = () => {
-    
+
     return (
         <div className="input_container">
-            <input type="text" placeholder="Shorten a link here..."/>
-            <button className="btn submit_btn" type="submit">Shorten It!</button>
+            <input type="text" placeholder={InputSection[0].content}/>
+            <button className="btn submit_btn" type="submit">{InputSection[1].content}</button>
         </div>
     );
 };
