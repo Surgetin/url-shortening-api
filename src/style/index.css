@@ -145,6 +145,7 @@ body {
 .nav_link {
     color: var(--grayish);
     font-weight: 500;
+    font-size: 1.2rem;
 }
 
 .primary-btn {
@@ -152,6 +153,7 @@ body {
     background-color: var(--primary-cyan);
     padding: .5rem 1.4rem;
     border-radius: 40px;
+    font-size: 1.2rem;
     font-weight: 500;
     border: none;
     outline: none;
@@ -160,9 +162,8 @@ body {
 .btn {
     color: white;
     background-color: var(--primary-cyan);
-    padding: .8rem 2.5rem;
+    padding: 1rem 2.5rem;
     border-radius: 40px;
-    font-size: 1rem;
     font-weight: 600;
     border: none;
     outline: none;
@@ -366,4 +367,34 @@ body {
 .testimonial_cards:nth-child(3) .testimonial_cards-icons{
   top: -22px;
   left: 47px;
+}
+
+/* Boost sectio */
+.boost_section-container {
+  text-align: center;
+  background-color: var(--primary-dark);
+  background-image: url("../images/bg-shorten-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: right bottom;
+  padding: 4rem 0;
+}
+
+.boost_section-heading {
+  font-size: 2.8rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+/* Footer section */
+.footer_section-container {
+  width: 100%;
+  background-color: var(--dark-violet);
+}
+
+.wrapper {
+  max-width: var(--max_width);
+  padding: 0 3rem;
+  margin-inline: auto;
 }

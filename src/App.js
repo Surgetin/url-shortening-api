@@ -3,6 +3,8 @@ import Navigation from "./components/Navigation";
 import HeroSection from "./components/HeroSection";
 import InputSection from "./components/InputSection";
 import Testimonial from "./components/Testimonial";
+import BoostSection from "./components/BoostSection";
+import FooterSection from "./components/FooterSection";
 
 function App() {
   return (
@@ -16,7 +18,11 @@ function App() {
           <InputSection />
         </div>
         <Testimonial />
+        <BoostSection />
       </main>
+      <footer className="footer">
+        <FooterSection />
+      </footer>
     </>
   );
 }
