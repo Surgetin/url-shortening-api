@@ -2,9 +2,7 @@ import React from "react";
 import { navLinks, navLinks2 } from '../constants';
 import logo from '../images/logo.svg';
 
-
 const navigation = () => {
-
     return (
         <div className="nav_container">
             <div className="nav">

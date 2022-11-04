@@ -192,10 +192,6 @@ body {
 }
 
 /* Hero content */
-.main {
-  /* padding: 0 3rem; */
-}
-
 .main_container {
     padding: 0 3rem;
     max-width: var(--max_width);
@@ -268,7 +264,7 @@ body {
 .testimonial_container {
   position: relative;
   margin-inline: auto; 
-  background-color: hsl(0deg 0% 87%);
+  background-color: rgb(235, 235, 235);
   margin-top: -6rem;
   padding-top: 13rem;
   padding-bottom: 15rem;
@@ -323,6 +319,7 @@ body {
   height: 100%;
   text-align: left;
   border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 3px 6px;
 }
 
 .testimonial_cards:nth-child(2) {
@@ -350,4 +347,23 @@ body {
 
 .testimonial_cards-content {
   color: var(--grayish);
+}
+
+.testimonial_cards-icons {
+  position: absolute;
+}
+
+.testimonial_cards:nth-child(1) .testimonial_cards-icons{
+  top: -22px;
+  left: 51px;
+}
+
+.testimonial_cards:nth-child(2) .testimonial_cards-icons{
+  top: -20px;
+  left: 51px;
+}
+
+.testimonial_cards:nth-child(3) .testimonial_cards-icons{
+  top: -22px;
+  left: 47px;
 }

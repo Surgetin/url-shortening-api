@@ -2,9 +2,7 @@ import React from "react";
 import { heroContent } from '../constants';
 import heroImage from '../images/illustration-working.svg';
 
-
 const heroSection = () => {
-
     return (
         <div className="hero_container">
             <div className="hero_section-left">

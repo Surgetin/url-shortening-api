@@ -2,7 +2,6 @@ import React from "react";
 import { InputSection } from '../constants';
 
 const inputSection = () => {
-
     return (
         <div className="input_container">
             <input type="text" placeholder={InputSection[0].content}/>
