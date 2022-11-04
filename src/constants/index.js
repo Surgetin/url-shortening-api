@@ -52,7 +52,7 @@ export const InputSection = [
   },
 ];
 
-export const Testimonials = [
+export const Testimonial = [
   {
     title: "heading",
     content: "Advanced Statistics",
@@ -61,5 +61,23 @@ export const Testimonials = [
     title: "content",
     content: `Track how your links are performing across the web with our 
     advanced statistics dashboard.`,
+  },
+];
+
+export const TestimonialCardsTexts = [
+  {
+    header: "Brand Recognition",
+    content: `Boost your brand recognition with each click. Generic links don’t 
+    mean a thing. Branded links help instil confidence in your content.`,
+  },
+  {
+    header: "Detailed Records",
+    content: `Gain insights into who is clicking your links. Knowing when and where 
+    people engage with your content helps inform better decisions.`,
+  },
+  {
+    header: "Fully Customizable",
+    content: `Improve brand awareness and content discoverability through customizable 
+    links, supercharging audience engagement.`,
   },
 ];

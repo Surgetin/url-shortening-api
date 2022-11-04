@@ -2,7 +2,7 @@ import React from "react";
 import Navigation from "./components/Navigation";
 import HeroSection from "./components/HeroSection";
 import InputSection from "./components/InputSection";
-import Testimonials from "./components/Testimonials";
+import Testimonial from "./components/Testimonial";
 
 function App() {
   return (
@@ -11,9 +11,11 @@ function App() {
         <Navigation />
       </header>
       <main className="main">
-        <HeroSection />
-        <InputSection />
-        <Testimonials />
+        <div className="main_container">
+          <HeroSection />
+          <InputSection />
+        </div>
+        <Testimonial />
       </main>
     </>
   );
