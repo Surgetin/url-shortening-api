@@ -103,12 +103,6 @@ body {
     background-color: var(--white-color);
 }
 
-@media screen and (max-width: 700px) {
-    .nav_container {
-        padding: 1.5rem 1rem;
-    }    
-}
-
 .nav {
     width: 100%;
     display: flex;
@@ -121,6 +115,8 @@ body {
 
 .navigation {
     width: 100%;
+    display: flex;    
+    justify-content: space-between;
 }
 
 .nav_lists,
@@ -128,6 +124,7 @@ body {
 .nav_list-container-login {
     display: flex;
     align-items: center;
+    gap: 1.5rem;
 }
 
 .nav_lists {
@@ -136,11 +133,6 @@ body {
 
 .logo_container {
     margin-right: 1.5rem;
-}
-
-.nav_list-container,
-.nav_list-container-login {
-    gap: 1.5rem;
 }
 
 .nav_link {

@@ -7,32 +7,34 @@ const navigation = () => {
         <div className="nav_container">
             <div className="nav">
                 <nav className="navigation">
-                    <ul className="nav_lists">
-                        <div className="nav_list-container">
-                            <div className="logo_container">
-                                <a href="#home">
-                                    <img src={logo} alt="logo" />
-                                </a>    
-                            </div>
+                    <div className="nav_list-container">
+                        <div className="logo_container">
+                            <a href="#home">
+                                <img src={logo} alt="logo" />
+                            </a>    
+                        </div>
+                        <ul className="nav_lists">
                             {navLinks.map((nav) => (
                                 <li key={nav.title} className="nav_list-item">
                                     <a className="nav_link" href={`#${nav.title}`}>{nav.content}</a>
                                 </li>
                             ))}
-                        </div>
-                        <div className="nav_list-container-login">
+                        </ul>
+                    </div>
+                    <div className="nav_list-container-login">
+                        <ul className="nav_lists">
                             {navLinks2.map((nav) => (
                                 <li key={nav.title} className="nav_list-item">
                                     <a className={nav.className ? nav.className : "nav_link"} href={`#${nav.title}`}>{nav.content}</a>
                                 </li>
                             ))}
-                        </div>
-                        <div className="menu">
-                            <span className="menu__btn"></span>
-                            <span className="menu__btn"></span>
-                            <span className="menu__btn"></span>
-                        </div>
-                    </ul>
+                        </ul>
+                    </div>
+                    <div className="menu">
+                        <span className="menu__btn"></span>
+                        <span className="menu__btn"></span>
+                        <span className="menu__btn"></span>
+                    </div>
                 </nav>
             </div>
         </div>

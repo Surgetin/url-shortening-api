@@ -10,7 +10,6 @@ const InputSection = () => {
             return console.log("empty")
         }
 
-        
     }
 
     
