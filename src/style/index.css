@@ -8,6 +8,7 @@
     --grayish: hsl(257, 7%, 63%);
     --dark-blue: hsl(255, 11%, 22%);
     --dark-violet: hsl(260, 8%, 14%);
+    --white-color: hsl(0, 0%, 100%);
 
     --max_width: 1440px;
     --transition-3ms: .3s;
@@ -99,7 +100,7 @@ body {
     transition: var(--transition-3ms);
     background-color: transparent;
     z-index: 999;
-    background-color: white;
+    background-color: var(--white-color);
 }
 
 @media screen and (max-width: 700px) {
@@ -149,7 +150,7 @@ body {
 }
 
 .primary-btn {
-    color: white;
+    color: var(--white-color);
     background-color: var(--primary-cyan);
     padding: .5rem 1.4rem;
     border-radius: 40px;
@@ -160,7 +161,7 @@ body {
 }
 
 .btn {
-    color: white;
+    color: var(--white-color);
     background-color: var(--primary-cyan);
     padding: 1rem 2.5rem;
     border-radius: 40px;
@@ -315,7 +316,7 @@ body {
   display: flex;
   gap: 1.3rem;
   flex-direction: column;
-  background-color: white;
+  background-color: var(--white-color);
   padding: 4.5rem 2rem 3rem 2rem;
   height: 100%;
   text-align: left;
@@ -383,18 +384,67 @@ body {
 
 .boost_section-heading {
   font-size: 2.8rem;
-  color: white;
+  color: var(--white-color);
   margin-bottom: 2rem;
 }
 
 /* Footer section */
-.footer_section-container {
+.footer {
   width: 100%;
   background-color: var(--dark-violet);
 }
 
-.wrapper {
+.footer_section-container {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
   max-width: var(--max_width);
-  padding: 0 3rem;
+  padding: 5rem 3rem;
   margin-inline: auto;
+  justify-content: space-between;
+}
+
+.logo_container {
+  padding-right: 6rem;
+}
+
+.footer_links-heading {
+  font-size: 1.2rem;
+  color: var(--white-color);
+}
+
+.links_container {
+  margin-top: -5px;
+}
+
+.social_container {
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+  transition: ease .3s;
+}
+
+.social_container img {
+  transition: ease .3s;
+}
+
+.social_container img:hover {
+  scale: 1.3;
+}
+
+.footer_links {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.footer_link {
+  cursor: pointer;
+  transition: .3s ease;
+  color: var(--grayish);
+}
+
+.footer_link:hover {
+  color: var(--primary-cyan);
 }
