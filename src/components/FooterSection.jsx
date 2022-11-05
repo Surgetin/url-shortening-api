@@ -5,11 +5,10 @@ import twitter from '../images/icon-twitter.svg';
 import pinterest from '../images/icon-pinterest.svg';
 import instagram from '../images/icon-instagram.svg';
 
-
 const footerSection = () => {
     return (
         <div className="footer_section-container">
-            <div className="logo_container">
+            <div className="footer_logo-container">
                 <a href="#home">
                     <img src={footerLogo} alt="logo" />
                 </a> 

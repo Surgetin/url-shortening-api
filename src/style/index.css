@@ -145,8 +145,23 @@ body {
 
 .nav_link {
     color: var(--grayish);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.2rem;
+    transition: .3s ease;
+}
+
+.nav_link:hover {
+  color: var(--dark-violet);
+}
+
+.primary-btn,
+.btn {
+  transition: .3s ease;
+}
+
+.primary-btn:hover,
+.btn:hover {
+  background-color: hsl(180, 64%, 73%);
 }
 
 .primary-btn {
@@ -404,7 +419,7 @@ body {
   justify-content: space-between;
 }
 
-.logo_container {
+.footer_logo-container {
   padding-right: 10rem;
 }
 
