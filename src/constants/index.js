@@ -41,7 +41,7 @@ export const heroContent = [
   },
 ];
 
-export const InputSection = [
+export const InputSectionText = [
   {
     title: "placeholder",
     content: "Shorten a link here...",

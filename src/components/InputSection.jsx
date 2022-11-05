@@ -1,13 +1,28 @@
-import React from "react";
-import { InputSection } from '../constants';
+import React, { useState } from "react";
+import { InputSectionText } from '../constants';
 
-const inputSection = () => {
+const InputSection = () => {
+    const [shortLink, setShortLink] = useState("")
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        if (!shortLink) {
+            return console.log("empty")
+        }
+
+        
+    }
+
+    
+
     return (
-        <div className="input_container">
-            <input type="text" placeholder={InputSection[0].content}/>
-            <button className="btn submit_btn" type="submit">{InputSection[1].content}</button>
+        <div className="input_container" onSubmit={handleSubmit}>
+            <form action="" className="form_container">
+                <input type="text" value={shortLink} onChange={(e) => setShortLink(e.target.value)} placeholder={InputSectionText[0].content}/>
+                <button className="btn submit_btn" type="submit">{InputSectionText[1].content}</button>
+            </form>
         </div>
     );
 };
 
-export default inputSection;
+export default InputSection;
