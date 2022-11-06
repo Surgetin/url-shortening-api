@@ -7,12 +7,17 @@ const ShortedLinks = ({originalLink, shortedLink, copied, setCopied}) => {
         setCopied(!copied)
     };
 
+    const handleDelete = () => {
+        console.log("deleted")
+    };
+
     return (
         <div className="shortedlink_container">
             <p className="original_link">{originalLink}</p>
             <div className="shortedlink_wrapper">
                 <p className="shorted_link">{shortedLink}</p>
-                <button type="submit" onClick={handleCopy} className="copy_link-btn btn">{copied ? "Copied!" : "Copy"}</button>
+                <button type="submit" onClick={handleCopy} className={copied ? "copied_link-btn btn" : "copy_link-btn btn"}>{copied ? "Copied!" : "Copy"}</button>
+                <button onClick={handleDelete} className="delete_btn"><i className="fa-solid fa-trash"></i></button>
             </div>
         </div>
     );

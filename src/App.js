@@ -10,7 +10,7 @@ import isURL from "validator/lib/isURL";
 function App() {
   const [shortLink, setShortLink] = useState("");
   const [originalLink, setOriginalLink] = useState("");
-  const [shortedLink, setShortedLink] = useState([]);
+  const [shortedLink, setShortedLink] = useState("");
   const [isError, setIsError] = useState(false);
   const [copied, setCopied] = useState(false);
 
@@ -27,10 +27,11 @@ function App() {
       const response = await fetch(`${BASE_URL}${shortLink}`);
       const data = await response.json();
       console.log(data.result);
-      setShortedLink([...shortedLink, data.result.full_short_link]);
+      setShortedLink(data.result.full_short_link);
       setOriginalLink(data.result.original_link);
     };
 
+    setShortedLink("");
     setShortLink("");
     setIsError(false);
     handleFetchData();
@@ -49,6 +50,7 @@ function App() {
             shortLink={shortLink}
             setShortLink={setShortLink}
             handleSubmit={handleSubmit}
+            setShortedLink={setShortedLink}
           />
         </div>
         <Testimonial
