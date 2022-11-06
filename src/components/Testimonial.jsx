@@ -19,8 +19,7 @@ const Testimonials = ({originalLink, shortedLink, copied, setCopied}) => {
                         copied={copied}
                         setCopied={setCopied}
                     /> 
-                ))
-                : ''}       
+                )) : ''}       
             </div>
                 <h1 className="testimonial_heading">{Testimonial[0].content}</h1>
                 <p className="testimonial_content">{Testimonial[1].content}</p>
