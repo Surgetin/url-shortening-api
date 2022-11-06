@@ -118,6 +118,7 @@ body {
     width: 100%;
     display: flex;    
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav_lists,
@@ -283,10 +284,14 @@ body {
 
     .hero_container {
         flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 6rem;
     }
 
     .hero_image {
         position: initial;
+        margin-right: -180px;
+        max-width: 450px;
     }
 
     .hero_heading {
