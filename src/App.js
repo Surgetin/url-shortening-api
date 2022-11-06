@@ -31,6 +31,7 @@ function App() {
       setOriginalLink(data.result.original_link);
     };
 
+    setCopied("");
     setShortedLink("");
     setShortLink("");
     setIsError(false);
