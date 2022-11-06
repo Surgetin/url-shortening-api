@@ -6,13 +6,21 @@ import brandImage from '../images/icon-brand-recognition.svg';
 import detailedImage from '../images/icon-detailed-records.svg';
 import fullyImage from '../images/icon-fully-customizable.svg';
 
-const Testimonials = () => {
+const Testimonials = ({originalLink, shortedLink, copied, setCopied}) => {
     return (
         <div className="testimonial_container"> 
             <div className="testimonial_wrapper">
             <div className="shorted_component-wrapper">
-                <ShortedLinks />
-                <ShortedLinks />          
+                {shortedLink ? shortedLink.map((index) => (
+                    <ShortedLinks 
+                        key={index}
+                        originalLink={originalLink} 
+                        shortedLink={shortedLink} 
+                        copied={copied}
+                        setCopied={setCopied}
+                    /> 
+                ))
+                : ''}       
             </div>
                 <h1 className="testimonial_heading">{Testimonial[0].content}</h1>
                 <p className="testimonial_content">{Testimonial[1].content}</p>
