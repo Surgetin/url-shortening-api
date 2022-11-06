@@ -286,6 +286,7 @@ body {
         flex-direction: column-reverse;
         align-items: center;
         padding-top: 6rem;
+        overflow-x: hidden;
     }
 
     .hero_image {
