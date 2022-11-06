@@ -37,6 +37,7 @@ const Testimonials = ({originalLink, shortedLink, copied, setCopied, setShortedL
                         content={TestimonialCardsTexts[2].content}
                         img={fullyImage}
                     />
+                    
                 </div>
             </div>
         </div>

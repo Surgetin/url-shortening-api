@@ -16,8 +16,10 @@ const ShortedLinks = ({originalLink, shortedLink, copied, setCopied}) => {
             <p className="original_link">{originalLink}</p>
             <div className="shortedlink_wrapper">
                 <p className="shorted_link">{shortedLink}</p>
-                <button type="submit" onClick={handleCopy} className={copied ? "copied_link-btn btn" : "copy_link-btn btn"}>{copied ? "Copied!" : "Copy"}</button>
-                <button onClick={handleDelete} className="delete_btn"><i className="fa-solid fa-trash"></i></button>
+                <div className="button_container">
+                    <button type="submit" onClick={handleCopy} className={copied ? "copied_link-btn btn" : "copy_link-btn btn"}>{copied ? "Copied!" : "Copy"}</button>
+                    <button onClick={handleDelete} className="delete_btn"><i className="fa-solid fa-trash"></i></button>
+                </div>
             </div>
         </div>
     );
