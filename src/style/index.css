@@ -246,7 +246,9 @@ body {
     }
 
     .hero_content {
-        max-width: 350px;
+        max-width: 500px;
+        width: 100%;
+        padding: 0 1rem;
     } 
 
     .hero_image {
@@ -495,10 +497,11 @@ body {
         padding-bottom: 12rem;
     }
     .testimonial_heading {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     .testimonial_content {
+        margin-top: 2rem;
         padding: 0 1rem;
         max-width: 100%;
     }
@@ -701,6 +704,10 @@ body {
 @media screen and (max-width: 850px) {
     .testimonial_wrapper {
         padding: 0 .5rem;
+    }
+
+    .shorted_component-wrapper {
+        margin-bottom: 3rem;
     }
 
     .shortedlink_container {
