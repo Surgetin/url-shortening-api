@@ -113,6 +113,7 @@ body {
     padding: 0 3rem;
 }
 
+
 .navigation {
     width: 100%;
     display: flex;    
@@ -199,6 +200,20 @@ body {
     background-color: var(--dark-violet);
     border-radius: 5px;
     transition: .4s ease;
+}
+
+@media screen and (max-width: 770px) {
+    .nav {
+        padding: 0 1rem;
+    }
+
+    .nav_lists {
+        display: none;
+    } 
+    
+    .menu {
+        display: block;
+    }
 }
 
 /* Hero content */
@@ -306,6 +321,7 @@ body {
 }
 
 .form_container {
+    position: relative;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -333,7 +349,8 @@ body {
 .input_error-message {
     display: none;
     position: absolute;
-    margin-top: .5rem;
+    left: 0;
+    top: 90px;
     font-size: 1.2rem;
     color: var(--secondary-locor);
     font-style: italic;
@@ -370,8 +387,7 @@ body {
     }
 
     .input_error-message.active {
-        position: absolute;
-        top: 27px;
+        position: initial;
         right: 50px;
     }
 
@@ -497,7 +513,7 @@ body {
         padding-bottom: 12rem;
     }
     .testimonial_heading {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
 
     .testimonial_content {
@@ -617,6 +633,22 @@ body {
     .boost_section-heading {
         font-size: 1.7rem;
         padding: 0 1rem
+    }
+
+    .footer_section-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        padding: 4rem 2rem;
+    }
+
+    .footer_logo-container {
+        margin-bottom: 2rem;
+    }
+
+    .social_container {
+        margin-top: 2rem;
     }
 }
 
