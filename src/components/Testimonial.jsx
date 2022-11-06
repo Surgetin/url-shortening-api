@@ -1,14 +1,19 @@
 import React from "react";
 import TestimonialCards from './TestimonialCards'
+import ShortedLinks from './ShortedLinks'
 import { Testimonial, TestimonialCardsTexts } from '../constants';
 import brandImage from '../images/icon-brand-recognition.svg';
 import detailedImage from '../images/icon-detailed-records.svg';
 import fullyImage from '../images/icon-fully-customizable.svg';
 
-const testimonials = () => {
+const Testimonials = () => {
     return (
-        <div className="testimonial_container">
+        <div className="testimonial_container"> 
             <div className="testimonial_wrapper">
+            <div className="shorted_component-wrapper">
+                <ShortedLinks />
+                <ShortedLinks />          
+            </div>
                 <h1 className="testimonial_heading">{Testimonial[0].content}</h1>
                 <p className="testimonial_content">{Testimonial[1].content}</p>
                 <div className="tesimonials_cards-container">
@@ -33,4 +38,4 @@ const testimonials = () => {
     );
 };
 
-export default testimonials;
+export default Testimonials;

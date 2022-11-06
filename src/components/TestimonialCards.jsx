@@ -1,6 +1,6 @@
 import React from "react";
 
-const testimonialCards = ({header, content, img}) => {
+const TestimonialCards = ({header, content, img}) => {
     return (
         <div className="testimonial_cards">
             <h1 className="testimonial_cards-heading">{header}</h1>
@@ -10,4 +10,4 @@ const testimonialCards = ({header, content, img}) => {
     );
 };
 
-export default testimonialCards;
+export default TestimonialCards;

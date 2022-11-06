@@ -5,7 +5,7 @@ import twitter from '../images/icon-twitter.svg';
 import pinterest from '../images/icon-pinterest.svg';
 import instagram from '../images/icon-instagram.svg';
 
-const footerSection = () => {
+const FooterSection = () => {
     return (
         <div className="footer_section-container">
             <div className="footer_logo-container">
@@ -48,4 +48,4 @@ const footerSection = () => {
     );
 };
 
-export default footerSection;
+export default FooterSection;

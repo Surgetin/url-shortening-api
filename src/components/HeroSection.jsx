@@ -2,7 +2,7 @@ import React from "react";
 import { heroContent } from '../constants';
 import heroImage from '../images/illustration-working.svg';
 
-const heroSection = () => {
+const HeroSection = () => {
     return (
         <div className="hero_container">
             <div className="hero_section-left">
@@ -17,4 +17,4 @@ const heroSection = () => {
     );
 };
 
-export default heroSection;
+export default HeroSection;

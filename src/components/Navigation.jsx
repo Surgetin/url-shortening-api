@@ -2,7 +2,7 @@ import React from "react";
 import { navLinks, navLinks2 } from '../constants';
 import logo from '../images/logo.svg';
 
-const navigation = () => {
+const Navigation = () => {
     return (
         <div className="nav_container">
             <div className="nav">
@@ -41,4 +41,4 @@ const navigation = () => {
     );
 };
 
-export default navigation;
+export default Navigation;

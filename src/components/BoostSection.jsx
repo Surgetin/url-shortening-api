@@ -1,7 +1,7 @@
 import React from "react";
 import { heroContent } from '../constants';
 
-const boostSection = () => {
+const BoostSection = () => {
     return (
         <div className="boost_section-container">
             <h1 className="boost_section-heading">Boost your links today</h1>
@@ -10,4 +10,4 @@ const boostSection = () => {
     );
 };
 
-export default boostSection;
+export default BoostSection;
