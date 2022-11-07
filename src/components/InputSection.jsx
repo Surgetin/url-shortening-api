@@ -1,7 +1,22 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { InputSectionText } from '../constants';
 
-const InputSection = ({isError, shortLink, setShortLink, handleSubmit}) => {
+const InputSection = ({isError, shortLink, shortedLink, setShortedLink, setShortLink, originalLink, setOriginalLink, handleSubmit}) => {
+
+    useEffect(() => {
+        const originalLink = JSON.parse(localStorage.getItem("originalLink"));
+        const shortedLinks = JSON.parse(localStorage.getItem("shortedLinks"));
+        if (originalLink) setShortedLink(originalLink);
+        if (shortedLinks) setOriginalLink(shortedLinks);
+    }, []);
+      
+    useEffect(() => {
+        if(shortedLink?.length) { 
+            localStorage.setItem("shortedLinks", JSON.stringify(shortedLink));
+            localStorage.setItem("originalLink", JSON.stringify(originalLink));
+        }
+    }, [shortedLink]);
+
     return (
         <div className="input_container" onSubmit={handleSubmit}>
             <form className="form_container">

@@ -49,9 +49,12 @@ function App() {
           <InputSection
             isError={isError}
             shortLink={shortLink}
+            shortedLink={shortedLink}
+            originalLink={originalLink}
+            setOriginalLink={setOriginalLink}
             setShortLink={setShortLink}
-            handleSubmit={handleSubmit}
             setShortedLink={setShortedLink}
+            handleSubmit={handleSubmit}
           />
         </div>
         <Testimonial

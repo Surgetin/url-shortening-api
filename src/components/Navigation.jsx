@@ -1,10 +1,21 @@
 import React from "react";
+import { useState } from "react";
 import { navLinks, navLinks2 } from '../constants';
 import logo from '../images/logo.svg';
 
 const Navigation = () => {
+    const [navigation, setNavigation] = useState(false)
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 10) {
+            setNavigation(false)
+        } else {
+            setNavigation(true)
+        }
+    })
+
     return (
-        <div className="nav_container">
+        <div className={navigation ? "nav_container" : "nav_container scrolled"}>
             <div className="nav">
                 <nav className="navigation">
                     <div className="nav_list-container">

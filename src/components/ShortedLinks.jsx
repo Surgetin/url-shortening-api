@@ -8,7 +8,8 @@ const ShortedLinks = ({originalLink, shortedLink, copied, setCopied}) => {
     };
 
     const handleDelete = () => {
-        console.log("deleted")
+        localStorage.removeItem('originalLink')
+        localStorage.removeItem('shortedLinks')
     };
 
     return (
