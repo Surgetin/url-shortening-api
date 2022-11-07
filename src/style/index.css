@@ -711,15 +711,18 @@ body {
     background-color: hsl(259, 31%, 44%);
 }
 
-.original_link {
+.original_link,
+.shorted_link {
     font-size: 1.3rem;
     font-weight: 500;
+    overflow: auto;
+}
+
+.original_link {
     color: var(--dark-blue)
 }
 
 .shorted_link {
-    font-size: 1.3rem;
-    font-weight: 500;
     color: var(--primary-cyan)
 }
 
